@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>YOUR SHOPPING BAG</h1>
+
+        <p class="totalItems itemNo">
+        </p>
+    </header>
+    <main role="main">
+        <section class="tableHeader">
+            <section class="deskItemNo">
+                <p class=" itemNo" id="totalItemNo">
+                    <span> ITEMS</span>
+                </p>
+            </section>
+            <section class="deskSize">
+                <p>SIZE</p>
+            </section>
+            <section class="deskQty">
+                <p>QTY</p>
+            </section>
+            <section class="deskPrice">
+                <p>PRICE</p>
+            </section>
+
+        </section>
+        <!-- this container contains the image & details of the item also the button container -->
+        <article class="item" role="contentinfo">
+            <figure class="itemImageWrapper" role="figure">
+                <img src="assets/T1.jpg" alt="Item Image" class="itemImage">
+            </figure>
+            <section class="itemDetails">
+                <header class="colourVariation">
+                    <h2 class="itemVariation">SOLID GREEN</h2>
+                    <h3 class="itemName">COTTON TSHIRT</h3>
+                </header>
+                <h3 class="style">Style #:
+                    <span>MS13234252</span>
+                </h3>
+                <h3 class="colour">Colour:
+                    <span>Blue</span>
+                </h3>
+                <h3 class="size toggle">Size:
+                    <span></span>
+                </h3>
+                <h3 class="qty toggle">QTY:
+                    <span class="quantity">1</span>
+                </h3>
+                <h3 class="pricePara toggle">$
+                    <span class="price">11.00</span>
+                </h3>
+            </section>
+            <!-- this division contains the size of the item & is visible only for desktop view -->
+            <section class="size-desk-container">
+                <h3 class="size">
+                    <span></span>
+                </h3>
+            </section>
+            <!-- this division contains the quantity of the item & is visible only for desktop view -->
+            <section class="qty-desk-container">
+                <h3 class="qty">
+                    <span class="quantity">1</span>
+                </h3>
+            </section>
+            <!-- this division contains the price of the item & is visible only for desktop view -->
+            <section class="price-desk-container">
+                <h3 class="pricePara">$
+                    <span class="price">11.00</span>
+                </h3>
+            </section>
+
+            <!-- buttons container -->
+            <section class="btnContainer">
+                <button class="editBtn btns" id="editButton" role="button\">EDIT</button>
+                <button class="removeBtn btns" role="button">X REMOVE</button>
+                <button class="saveBtn btns" role="button">SAVE FOR LATER</button>
+            </section>
+        </article>
+        <!-- checkout container -->
+        <section class="checkout">
+            <aside class="help">
+                <h2>Need help</h2>
+                <p>or have questions?</p>
+                <p>Call Customer service at</p>
+                <nav>
+                    <a href="tel:18005555555" class="contact-no">1-800-555-5555</a>
+                    <a href="#">Chat With one of our Stylists</a>
+                    <a href="#">See return & exchange policy</a>
+                </nav>
+            </aside>
+            <section class="checkout-container">
+                <div class="promotion">
+                    <div>
+                        <label for="promotionCode" class="promotionalLabel">ENTER PROMOTION CODE OR GIFT CARD</label>
+                    </div>
+                    <form role="form">
+                        <fieldset>
+                            <input type="text" id="promotionCode" class="promotionField">
+                            <button class="promotionBtn" role="button">Apply</button>
+                        </fieldset>
+                    </form>
+
+                </div>
+
+                <section class="subtotal">
+                    <h2>SUBTOTAL</h2>
+                    <h3>$
+                        <span class="sub-amount"></span>
+                    </h3>
+                </section>
+                <section class="shipping">
+                    <p>ESTIMATED SHIPPING*
+                        <span class="free-shipping">You spend $
+                            <span class="sub-amount amount-ship"></span>,so you qualify for free shipping*</span>
+                    </p>
+                    <p>FREE</p>
+                </section>
+                <section class="appliedCode">
+                    <p>PROMOTION CODE
+                        <span class="JF-applied"></span>APPLIED</p>
+
+                    <span class="discount-amt">$0</span>
+
+                </section>
+
+                <section class="estTotal">
+                    <p>ESTIMATED TOTAL
+                        <span>Tax will be applied during Checkout</span>
+                    </p>
+                    <h2>$
+                        <span class="est-amount"></span>
+                    </h2>
+                </section>
+            </section>
+
+        </section>
+    </main>
+    <!-- edit modal -->
+    <article class="modal-container" id="editModal">
+        <div class="modal">
+            <section class="modalDetails">
+                <header>
+                    <h2 class="variationModal"></h2>
+                    <h2 class="nameModal"></h2>
+                </header>
+
+                <h2 class="modal-price">$
+                    <span class="modal-price-row"></span>
+                </h2>
+                <form role="form">
+                    <fieldset>
+                        <div class="color-choices-container">
+                        </div>
+                        <!-- drop-down menu for size of the item -->
+                        <select name="size" class="sizedrp">
+
+                            <option value="s">s</option>
+                            <option value="m">m</option>
+                            <option value="l">l</option>
+                            <option value="xl">xl</option>
+                        </select>
+                        <!-- drop-down menu for quantity of the item -->
+                        <select name="Qty:1" class="qtyDrp">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+
+                        <button class="edit-modal-btn" role="button">Edit</button>
+                    </fieldset>
+                </form>
+            </section>
+            <figure class="cross-icon-container" role="figure">
+                <img src="http://simpleicon.com/wp-content/uploads/cross.png" alt="modal-close-icon" class="cross-icon">
+            </figure>
+            <figure class="modalImgContainer" role="figure">
+                <img src="assets/T1.jpg" alt="item Image" class="modal-image">
+            </figure>
+        </div>
+    </article>
+    <footer class="footer">
+        <button class="checkoutBtn" id="checkoutButton" role="button">CHECKOUT</button>
+        <a href="#">CONTINUE SHOPPING</a>
+        <p class="secure-checkout-para">Secure checkout, shopping is always safe & secure</p>
+        <figure role="figure">
+            <img src="assets/lock.jpg" alt="lock icon" class="lock">
+        </figure>
+        <p class="toggle">
+            <a href="#">SIGN IN</a> to save your cart and have access to your items on mobile, tablet and desktop </p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB9F_y2cz4k9wzE9tthqi--hsAeWpnMmAk",
+            authDomain: "shopping-cart-1f07c.firebaseapp.com",
+            databaseURL: "https://shopping-cart-1f07c.firebaseio.com",
+            projectId: "shopping-cart-1f07c",
+            storageBucket: "shopping-cart-1f07c.appspot.com",
+            messagingSenderId: "172686302727"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="scripts/indexES6.js"></script>
+</body>
+
+</html>

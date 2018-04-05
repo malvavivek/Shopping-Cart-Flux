@@ -1,0 +1,171 @@
+{
+  "productsInCart" : [ {
+    "c_currency" : "$",
+    "p_available_options" : {
+      "colors" : [ {
+        "hexcode" : "#A3D2A1",
+        "name" : "green"
+      }, {
+        "hexcode" : "#F9F8E6",
+        "name" : "yellow"
+      }, {
+        "hexcode" : "#ED99A8",
+        "name" : "red"
+      } ],
+      "sizes" : [ {
+        "code" : "s",
+        "name" : "small"
+      }, {
+        "code" : "m",
+        "name" : "medium"
+      }, {
+        "code" : "l",
+        "name" : "large"
+      }, {
+        "code" : "xl",
+        "name" : "extra large"
+      } ]
+    },
+    "p_id" : "1",
+    "p_name" : "cotton tshirt",
+    "p_originalprice" : 11,
+    "p_price" : 11,
+    "p_quantity" : 1,
+    "p_selected_color" : {
+      "hexcode" : "#1169BD",
+      "name" : "blue"
+    },
+    "p_selected_size" : {
+      "code" : "s",
+      "name" : "small"
+    },
+    "p_style" : "ms13kt1906",
+    "p_variation" : "solid green"
+  }, {
+    "c_currency" : "$",
+    "p_available_options" : {
+      "colors" : [ {
+        "hexcode" : "#A3D2A1",
+        "name" : "green"
+      }, {
+        "hexcode" : "#F9F8E6",
+        "name" : "yellow"
+      }, {
+        "hexcode" : "#F1DDEF",
+        "name" : "pink"
+      } ],
+      "sizes" : [ {
+        "code" : "s",
+        "name" : "small"
+      }, {
+        "code" : "m",
+        "name" : "medium"
+      }, {
+        "code" : "l",
+        "name" : "large"
+      }, {
+        "code" : "xl",
+        "name" : "extra large"
+      } ]
+    },
+    "p_id" : "2",
+    "p_name" : "print girls tee",
+    "p_originalprice" : 17,
+    "p_price" : 17,
+    "p_quantity" : 1,
+    "p_selected_color" : {
+      "hexcode" : "#F1DDEF",
+      "name" : "pink"
+    },
+    "p_selected_size" : {
+      "code" : "s",
+      "name" : "small"
+    },
+    "p_style" : "ms13kt1906",
+    "p_variation" : "pink rainbow"
+  }, {
+    "c_currency" : "$",
+    "p_available_options" : {
+      "colors" : [ {
+        "hexcode" : "#A3D2A1",
+        "name" : "green"
+      }, {
+        "hexcode" : "#1169BD",
+        "name" : "blue"
+      }, {
+        "hexcode" : "#ED99A8",
+        "name" : "red"
+      } ],
+      "sizes" : [ {
+        "code" : "s",
+        "name" : "small"
+      }, {
+        "code" : "m",
+        "name" : "medium"
+      }, {
+        "code" : "l",
+        "name" : "large"
+      }, {
+        "code" : "xl",
+        "name" : "extra large"
+      } ]
+    },
+    "p_id" : "3",
+    "p_name" : "flower pattern shirt",
+    "p_originalprice" : 21,
+    "p_price" : 9,
+    "p_quantity" : 1,
+    "p_selected_color" : {
+      "hexcode" : "#1169BD",
+      "name" : "blue"
+    },
+    "p_selected_size" : {
+      "code" : "s",
+      "name" : "small"
+    },
+    "p_style" : "ms13kt1906",
+    "p_variation" : "blue"
+  }, {
+    "c_currency" : "$",
+    "p_available_options" : {
+      "colors" : [ {
+        "hexcode" : "#A3D2A1",
+        "name" : "green"
+      }, {
+        "hexcode" : "#F9F8E6",
+        "name" : "yellow"
+      }, {
+        "hexcode" : "#ED99A8",
+        "name" : "red"
+      } ],
+      "sizes" : [ {
+        "code" : "s",
+        "name" : "small"
+      }, {
+        "code" : "m",
+        "name" : "medium"
+      }, {
+        "code" : "l",
+        "name" : "large"
+      }, {
+        "code" : "xl",
+        "name" : "extra large"
+      } ]
+    },
+    "p_id" : "4",
+    "p_name" : "check pattern tshirt",
+    "p_originalprice" : 22,
+    "p_price" : 22,
+    "p_quantity" : 1,
+    "p_selected_color" : {
+      "hexcode" : "",
+      "name" : "red"
+    },
+    "p_selected_size" : {
+      "code" : "s",
+      "name" : "small"
+    },
+    "p_style" : "ms13kt1906",
+    "p_variation" : "mens red"
+  } ]
+}
